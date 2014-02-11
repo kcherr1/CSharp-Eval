@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpEval", "CSharpEval\CSharpEval.csproj", "{628E5659-692D-4163-BB3C-C94E81E12E29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{44B31FA2-363E-4988-81C9-CDCDB36611E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{628E5659-692D-4163-BB3C-C94E81E12E29} = {628E5659-692D-4163-BB3C-C94E81E12E29}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{2BE1D7C9-C0A8-405F-824D-806BB38A807E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{628E5659-692D-4163-BB3C-C94E81E12E29} = {628E5659-692D-4163-BB3C-C94E81E12E29}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5BC4F46C-526B-43FD-9551-3B51B4471377}"
+	ProjectSection(SolutionItems) = preProject
+		CSharpEval.vsmdi = CSharpEval.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = CSharpEval.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Debug|x86.ActiveCfg = Debug|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Debug|x86.Build.0 = Debug|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Release|Any CPU.ActiveCfg = Release|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Release|Mixed Platforms.Build.0 = Release|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Release|x86.ActiveCfg = Release|x86
+		{628E5659-692D-4163-BB3C-C94E81E12E29}.Release|x86.Build.0 = Release|x86
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{44B31FA2-363E-4988-81C9-CDCDB36611E0}.Release|x86.Build.0 = Release|Any CPU
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Debug|x86.ActiveCfg = Debug|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Debug|x86.Build.0 = Debug|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Release|Any CPU.ActiveCfg = Release|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Release|Mixed Platforms.Build.0 = Release|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Release|x86.ActiveCfg = Release|x86
+		{2BE1D7C9-C0A8-405F-824D-806BB38A807E}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{44B31FA2-363E-4988-81C9-CDCDB36611E0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestProject</RootNamespace>
+    <AssemblyName>TestProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\CSharpEval\bin\Debug\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="CSharpEval, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\CSharpEval\bin\Debug\CSharpEval.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\OpOverload.cs" />
+    <Compile Include="Content\OpOverloadType.cs" />
+    <Compile Include="Content\OverrideBase.cs" />
+    <Compile Include="Content\OverrideDerived.cs" />
+    <Compile Include="Content\OverrideTest.cs" />
+    <Compile Include="Tests\AccessModifiers.cs" />
+    <Compile Include="Tests\Arithmetic.cs" />
+    <Compile Include="Tests\Array.cs" />
+    <Compile Include="Tests\Assignment.cs" />
+    <Compile Include="Tests\BadExps.cs" />
+    <Compile Include="Tests\Casts.cs" />
+    <Compile Include="Tests\Bitwise.cs" />
+    <Compile Include="Tests\Conditional.cs" />
+    <Compile Include="Tests\Logical.cs" />
+    <Compile Include="Tests\Enums.cs" />
+    <Compile Include="Tests\Literals.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\Identifiers.cs" />
+    <Compile Include="Tests\MethodCalls.cs" />
+    <Compile Include="Tests\ObjectConstruction.cs" />
+    <Compile Include="Tests\OpOverloads.cs" />
+    <Compile Include="Tests\ParserTestBase.cs" />
+    <Compile Include="Tests\SpecialExpressions.cs" />
+    <Compile Include="Tests\StressTests.cs" />
+    <Compile Include="Content\AccessModifierTest.cs" />
+    <Compile Include="Content\ArrayTest.cs" />
+    <Compile Include="Content\AssignmentTest.cs" />
+    <Compile Include="Content\B.cs" />
+    <Compile Include="Content\C.cs" />
+    <Compile Include="Content\EnumTest.cs" />
+    <Compile Include="Content\F.cs" />
+    <Compile Include="Content\G.cs" />
+    <Compile Include="Content\IA.cs" />
+    <Compile Include="Content\IdentifierTest.cs" />
+    <Compile Include="Content\LiteralTest.cs" />
+    <Compile Include="Content\MethodTest.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_InternalNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_InternalParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_PrivateNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_PrivateParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_ProtectedNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_ProtectedParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_PublicNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalClass_PublicParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalStruct_InternalCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalStruct_PrivateCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\InternalStruct_PublicCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_InternalNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_InternalParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_PrivateNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_PrivateParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_ProtectedNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_ProtectedParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_PublicNoParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicClass_PublicParamCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicStruct_InternalCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicStruct_PrivateCtor.cs" />
+    <Compile Include="Content\ObjectConstruction\PublicStruct_PublicCtor.cs" />
+    <Compile Include="Content\OpEqTest.cs" />
+    <Compile Include="Content\OpEqTestItem.cs" />
+    <Compile Include="Content\SpecialExpressionsTest.cs" />
+    <Compile Include="Content\Suffixes.cs" />
+    <Compile Include="Content\TermConstants.cs" />
+    <Compile Include="Content\TestClass.cs" />
+    <Compile Include="Content\TestEnumType.cs" />
+    <Compile Include="Content\UnaryOp.cs" />
+    <Compile Include="Content\Vector2.cs" />
+    <Compile Include="Content\Vector3.cs" />
+    <Compile Include="Content\X.cs" />
+    <Compile Include="TestProj.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AuthoringTests.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

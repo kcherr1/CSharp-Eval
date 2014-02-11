@@ -1,0 +1,31 @@
+﻿namespace CSE.Content {
+	public enum OpOverloadType {
+		UPLUS,
+		UMINUS,
+		BANG,
+		INC,
+		DEC,
+		TRUE,
+		FALSE,
+		ADD,
+		SUB,
+		MUL,
+		DIV,
+		MOD,
+		BIT_AND,
+		BIT_OR,
+		BIT_XOR,
+		BIT_NOT,
+		BIT_RSHIFT,
+		BIT_LSHIFT,
+		EQ,
+		NEQ,
+		LT,
+		LTE,
+		GT,
+		GTE,
+		COV_WIDE,
+		COV_NARROW,
+		NONE
+	}
+}
